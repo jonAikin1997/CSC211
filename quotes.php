@@ -5,7 +5,7 @@
 	<title>Quotes</title>
 </head>
 <body>
-<?php // Script 2.4 - quotes.php
+<?php
 
 // Single or double quotation marks won't matter here:
 $first_name = 'Jonathan';
