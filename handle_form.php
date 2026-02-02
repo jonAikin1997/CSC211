@@ -15,11 +15,12 @@ ini_set('display_errors', 1); // Let me learn from my mistakes!
 // Create shorthand versions of the variables:
 $title = $_POST['title'];
 $name = $_POST['name'];
+$lname = $_POST['lname'];
 $response = $_POST['response'];
 $comments = $_POST['comments'];
 
 // Print the received data:
-print "<p>Thank you, $title $name, for your comments.</p>
+print "<p>Thank you, $title $name $lname, for your comments.</p>
 <p>You stated that you found this example to be '$response' and added:<br>$comments</p>";
 
 ?>
