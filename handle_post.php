@@ -12,9 +12,9 @@ first_name, last_name, email, posting, submit */
 // Address error management, if you want.
 
 // Get the values from the $_POST array:
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
-$posting = nl2br($_POST['posting'], false); 
+$first_name = trim($_POST['first_name']);
+$last_name = trim($_POST['last_name']);
+$posting = nl2br(trim($_POST['posting'], false)); 
 
 // Create a full name variable:
 $name = $first_name . ' ' . $last_name;
@@ -26,6 +26,9 @@ $strip_post = strip_tags($_POST['posting']);
 $words = str_word_count($posting);
 
 $posting = substr($posting, 0, 50);
+
+// Take out the bad words:
+$posting = str_ireplace('badword', 'XXXXX', $posting);
 
 // Print a message:
 print "<div>Thank you, $name, for your posting:
