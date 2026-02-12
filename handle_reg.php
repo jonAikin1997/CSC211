@@ -11,6 +11,8 @@
 email, password, confirm, year, terms, color, submit */
 
 // Address error management, if you want.
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 // Flag variable to track success:
 $okay = true;
