@@ -25,6 +25,7 @@ print "<p>The soups array originally had $count1 elements.</p>";
 $soups['Thursday'] = 'Chicken Noodle';
 $soups['Friday'] = 'Tomato';
 $soups['Saturday'] = 'Cream of Broccoli';
+$soups['Sunday'] = 'Mushroom';
 
 // Count and print the number of elements again:
 $count2 = count($soups);
