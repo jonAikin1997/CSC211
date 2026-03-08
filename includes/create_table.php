@@ -8,8 +8,11 @@
 <?php // Script 12.3 - create_table.php
 /* This script connects to the MySQL server, selects the database, and creates a table. */
 
+//Had to add this because this version of PHP does not take the else statement without this switch being off.
+mysqli_report(MYSQLI_REPORT_OFF);
+
 //Create Connection
-$conn = new mysqli('localhost', 'root', 'i2e4', 'myblog');
+$conn = @new mysqli('localhost', 'root', 'wrongpass', 'myblog');
 
 // Check connection
 if ($conn->connect_error) {
